@@ -3,6 +3,21 @@
 
     $(document).ready(function() {
 
+        $('#navs').onePageNav({
+            currentClass: 'active',
+            scrollSpeed: 750,
+            scrollThreshold: 0.5,
+            scrollOffset: 0,
+            filter: ':not(.external)',
+            easing: 'swing'
+        });
+
+        $(".header__main-menu").sticky({ topSpacing: 0 });
+
+        $('.nav a.collapse-menu').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+
         var scroll = new SmoothScroll();
         scroll.init({
             speed: 1000,
@@ -23,22 +38,28 @@
             if ($(window).scrollTop() > 400){
                 scrollTimeout = setTimeout(function () {
                     $('a.scroll-top:hidden').fadeIn()
-                }, 100, "easeInOutExpo");
+                }, 100);
             }
             else {
                 scrollTimeout = setTimeout(function () {
                     $('a.scroll-top:visible').fadeOut()
-                }, 100, "easeInOutExpo");
+                }, 100);
             }
         });
+
+
     });
 
     $(window).on('load' ,function () {
+
+        $(".loader__item").delay(700).fadeOut();
+        $(".loader").delay(800).fadeOut("slow");
 
         parallaxInit();
         initTyped();
         new WOW().init();
         gmapInit();
+        // pageNav();
     });
 
     function parallaxInit() {
@@ -94,19 +115,18 @@ function gmapInit() {
             center: center,
             zoom: 13,
             mapTypeId : google.maps.MapTypeId.ROADMAP
-        })
-        .bicyclinglayer()
-        .circle({
-            center: center,
-            radius : 250,
-            fillColor : "#57AA02",
-            strokeColor : "#f18805"
-        })
-        .on('click', function (circle, event) {
-            circle.setOptions({fillColor: "#AAFF55"});
-            setTimeout(function () {
-                circle.setOptions({fillColor: "#FFAF9F"});
-            }, 200);
-        })
-    ;
+    })
+    .bicyclinglayer()
+    .circle({
+        center: center,
+        radius : 250,
+        fillColor : "#57AA02",
+        strokeColor : "#f18805"
+    })
+    .on('click', function (circle, event) {
+        circle.setOptions({fillColor: "#AAFF55"});
+        setTimeout(function () {
+            circle.setOptions({fillColor: "#FFAF9F"});
+        }, 200);
+    });
 }
