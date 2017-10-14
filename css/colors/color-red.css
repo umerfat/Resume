@@ -1,0 +1,67 @@
+.border{
+    background-color: #cb202d;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    color: #cb202d !important;
+}
+
+.section-title h2 span{
+    color: #cb202d;
+}
+
+.about__signature{
+    color: #cb202d;
+}
+
+.btn--green{
+    background-color: #cb202d;
+}
+
+.loader__green{
+    color: #cb202d;
+}
+
+.scroll-top{
+    background: none repeat scroll 0 0 #cb202d;
+}
+
+.resume__timeline-post-title h4{
+    color: #cb202d;
+}
+
+.resume__timeline-post-right > .resume__timeline-post:hover > .resume__timeline-post-content-holder > .resume__timeline-post-icon{
+    background-color: #cb202d;
+}
+
+.resume__timeline-post-left > .resume__timeline-post:hover > .resume__timeline-post-content-holder > .resume__timeline-post-icon{
+    background-color: #cb202d;
+}
+
+.resume__iconspace{
+    background-color: #cb202d;
+}
+
+.resume__timeline-end-icon{
+    background-color: #cb202d;
+}
+
+.services__content h3{
+    color: #cb202d;
+}
+
+.services__box:hover i.services__icon{
+    background-color: #cb202d;
+}
+
+.contact__form input.btn[type="submit"]{
+    background-color: #cb202d;
+}
+
+.footer__copyright a{
+    color: #cb202d;
+}
+
+.resume__bt-timeline{
+    background-color: #cb202d;
+}

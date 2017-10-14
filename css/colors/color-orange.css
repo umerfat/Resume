@@ -1,0 +1,67 @@
+.border{
+    background-color: #f18805;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    color: #f18805 !important;
+}
+
+.section-title h2 span{
+    color: #f18805;
+}
+
+.about__signature{
+    color: #f18805;
+}
+
+.btn--green{
+    background-color: #f18805;
+}
+
+.loader__green{
+    color: #f18805;
+}
+
+.scroll-top{
+    background: none repeat scroll 0 0 #f18805;
+}
+
+.resume__timeline-post-title h4{
+    color: #f18805;
+}
+
+.resume__timeline-post-right > .resume__timeline-post:hover > .resume__timeline-post-content-holder > .resume__timeline-post-icon{
+    background-color: #f18805;
+}
+
+.resume__timeline-post-left > .resume__timeline-post:hover > .resume__timeline-post-content-holder > .resume__timeline-post-icon{
+    background-color: #f18805;
+}
+
+.resume__iconspace{
+    background-color: #f18805;
+}
+
+.resume__timeline-end-icon{
+    background-color: #f18805;
+}
+
+.services__content h3{
+    color: #f18805;
+}
+
+.services__box:hover i.services__icon{
+    background-color: #f18805;
+}
+
+.contact__form input.btn[type="submit"]{
+    background-color: #f18805;
+}
+
+.footer__copyright a{
+    color: #f18805;
+}
+
+.resume__bt-timeline{
+    background-color: #f18805;
+}
