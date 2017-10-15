@@ -1382,6 +1382,19 @@ blockquote p {
     padding: 22px;
 }
 
+.sending{
+    display:none;
+    color:#ffffff;
+    font-size:20px;
+    line-height:20px;
+    text-align: center;
+}
+
+.mess.center {
+    color: #ffffff;
+    text-align: center;
+}
+
 .gmap {
     height: 400px;
 }

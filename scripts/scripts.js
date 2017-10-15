@@ -47,7 +47,35 @@
             }
         });
 
+        $("#submit").formValidator({
+            scope: "#contact-form"
+        });
 
+        $('#submit').click(function() {
+            $('input.error-input, textarea.error-input').delay(300).animate({marginLeft:0},100).animate({marginLeft:10},100).animate({marginLeft:0},100).animate({marginLeft:10},100);
+        });
+
+        var options = {
+
+            beforeSubmit: function () {
+                $('.sending').show();
+            },
+
+            success: function () {
+                $('.sending').hide();
+                $('#contact-form').hide;
+                $('.mess').append('<h5>Thanks !</h5><h5>Your message has been sent.</h5>');
+                $('.mess').delay(3000).fadeOut(function () {
+                    $('#contact-form').clearForm();
+                    $('#contact-form').delay(3500).show();
+                });
+            }
+        }
+
+        $('#contact-form').submit(function () {
+            $(this).ajaxSubmit(options);
+            return false;
+        });
     });
 
     $(window).on('load' ,function () {

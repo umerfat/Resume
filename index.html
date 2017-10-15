@@ -518,21 +518,24 @@
                 <!--</ul>-->
                 <!--</div>-->
                 <div class="col-md-12 wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                    <form id="contact-form" class="contact__form" method="post" action="">
+                    <form id="contact-form" class="contact__form" method="post" action="contact.php">
                         <div class="col-md-6">
-                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="text" name="name" placeholder="Name">
                         </div>
                         <div class="col-md-6">
-                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="email" name="email" placeholder="Email">
                         </div>
                         <div class="col-md-12">
                             <textarea name="message" placeholder="Message" rows="8"></textarea>
                         </div>
                         <div class="col-md-12">
-                            <input type="submit" class="btn btn--vv btn--large outline" id="submit"
-                                   value="Send Message">
+                            <input type="submit" class="btn btn--vv btn--large outline" id="submit" value="Send Message">
                         </div>
                     </form>
+                    <span class="sending">
+                        sending...
+                    </span>
+                    <div class="mess center"></div>
                 </div>
             </div>
         </div>
@@ -577,6 +580,8 @@
 <script type="text/javascript" src="scripts/smooth-scroll.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.nav.js"></script>
 <script type="text/javascript" src="scripts/jquery.sticky.js"></script>
+<script type="text/javascript" src="scripts/jquery.form-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.ufvalidator-1.0.5-min.js"></script>
 <script type="text/javascript" src="scripts/scripts.js"></script>
 <a class="scroll-top hidden-xs hidden-sm" href="#" title="Scroll to top"><i class="fa fa-chevron-up"></i></a>
 
